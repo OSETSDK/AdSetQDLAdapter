@@ -1,11 +1,17 @@
 # AdSetQDLAdapter
 
-本仓库为 AdSetQDLAdapter 渠道适配器预留交付位置，目前仅包含仓库说明。
+定制版趣盟 L 渠道 iOS 适配器，OSET 后端渠道值为 `hle`。
 
-实现前需提供并确认：
+## 接入
 
-- 渠道 SDK、对应版本及官方文档或获取方式。
-- 渠道的 `platform key` 及其配置约定。
-- 需要支持的广告格式。
+应用最低支持 iOS 12。适配器依赖 `OSETCoreAd >= 7.0.4.1` 和 `AdSetQDLAdSDK = 1.9.4.6`。
 
-确认上述信息后，再进行适配实现和验证。当前没有可安装的适配器，无需在 Podfile 中添加本库。
+```ruby
+pod 'AdSetQDLAdapter', '2.0.1.0'
+```
+
+定制版趣盟与普通趣盟 `QuMengAdSDK` 包含同名 Objective-C 类，同一应用只能集成其中一套。应用的 `Info.plist` 需要设置 `CFBundleShortVersionString` 和 `CFBundleVersion`。
+
+提供开屏、插屏、激励视频、Banner、模板信息流和自渲染信息流适配。此版本暂停提供 S2S 竞价 token，普通广告请求使用原有加载入口。
+
+静态 XCFramework 支持 iOS 真机 arm64 和模拟器 arm64、x86_64。
