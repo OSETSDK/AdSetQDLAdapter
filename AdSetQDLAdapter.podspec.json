@@ -1,6 +1,6 @@
 {
   "name": "AdSetQDLAdapter",
-  "version": "2.0.1.0",
+  "version": "2.0.1.1",
   "summary": "定制版趣盟 iOS SDK 适配器",
   "homepage": "https://github.com/OSETSDK/AdSetQDLAdapter",
   "license": {
@@ -12,7 +12,7 @@
   },
   "source": {
     "git": "https://github.com/OSETSDK/AdSetQDLAdapter.git",
-    "tag": "2.0.1.0"
+    "tag": "2.0.1.1"
   },
   "platforms": {
     "ios": "12.0"
@@ -27,7 +27,7 @@
       ">= 7.0.4.1"
     ],
     "AdSetQDLAdSDK": [
-      "= 1.9.4.6"
+      "= 1.9.5.1"
     ]
   },
   "user_target_xcconfig": {
