@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'AdSetQDLAdapter'
-  s.version = '2.0.1.1'
+  s.version = '2.0.1.2'
   s.summary = '定制版趣盟 iOS SDK 适配器'
   s.homepage = 'https://github.com/OSETSDK/AdSetQDLAdapter'
   s.license = { :type => 'MIT', :file => 'LICENSE' }
